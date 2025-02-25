@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="utf-8" />
+    <title>Nutritious Blends</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <script type="text/javascript">    
+
+        let images = ['chia.jpg', 'smoothie.png', 'strawberry.png', 'passionfruit.jpg', 'green.jpg'];
+        let currentImageIndex = 0;
+
+        function changeBackground() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.querySelector('.header').style.backgroundImage = `url('${images[currentImageIndex]}')`;
+        }
+
+        setInterval(changeBackground, 5000);
+
+    </script>
+</header>
+
+
+<body>
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">Nutritious Blends</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Type to search">
+                <button>Search</button>
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <h1>Elevate Your Diet<br><span>With Quick and Delicious</span><br>Smoothie Recipes</h1>
+            <p class="par">Whether you’re looking for an energy boost, a post-workout refuel, or a simple way to add more fruits <br>
+                and veggies to your diet, we’ve got you covered. From vibrant green detox blends to protein-packed <br>
+                power smoothies, our recipes are designed to support your health goals while<br>
+                keeping things simple and delicious.</p>
+                 <button class="cn"><a href="#">MAKE AN ACCOUNT</a></button>
+        </div>
+    </section>
+</body>
+ </section>
+
+ <section class="intro">
+    <h1>Contents</h1>
+    <p>Explore the timeless history, famous architectures and the mouth watering foods of Turkiye</p>
+    
+    <div class="row">
+        <div class="course-col">
+            <h2>Sunshine Smoothie</h2>
+            <p>Start your day with a burst of sunshine! The Sunshine Smoothie is a refreshing, vibrant blend packed with tropical flavors and immune-boosting nutrients. With a mix of juicy oranges, sweet mangoes, and zesty pineapples, this smoothie is like sipping on pure sunshine—energizing, uplifting, and absolutely delicious..</p>
+        </div>
+         <div class="course-col">
+            <h2>Banana Smoothie</h1>
+            <p>banana smoothies are the perfect blend of taste and nutrition. Packed with essential vitamins, minerals, and energy-boosting goodness, bananas make an excellent base for a delicious and healthy smoothie. Whether you're looking for a quick breakfast, a post-workout refuel, or a satisfying snack, a banana smoothie is always a great choice. </p>
+        </div>
+        <div class="course-col">
+            <h2>Strawberry Smoothie</h2>
+            <p>Sweet, vibrant, and packed with vitamins, a strawberry smoothie is the perfect way to refresh and nourish your body. Bursting with antioxidants, fiber, and natural sweetness, strawberries make a delicious and healthy base for a smoothie that fuels your day.</p>
+        </div>
+    
+    </div>
+
+</div>
+ </section>
+
+ <!----video----->
+
+<section class="video">
+    <h1>Try This Smoothie Recipe That Takes Less Than 5 Minutes To Make</h1>
+    <p>This smoothie recipe is healthy with a lot of nutrients your body needs throughout the day. Start your morning with this treat and be energised throughout the whole day!</p>
+    <div class="video_">
+    <video width="960" height="720" controls>
+        <source src="Quick Easy Strawberry Smoothie Recipe.mp4" type="video/mp4">
+    </video>
+    </div>
+</section>
+
+ <!----footer----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>For further information regarding the website, feedback or if you're having any problems <br>please email asyatanyu@gmail.com</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    <p>Made by <i class="fa fa-heart-o"></i> Asya Tanyu</p>
+</section>
+
+</body>
+</html>
+
+
